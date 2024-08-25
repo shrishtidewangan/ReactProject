@@ -1,0 +1,116 @@
+:root {
+  --color-grey-primary: #f0f0f0;
+  --color-yellow-primary: goldenrod;   
+  --color-orange-primary: darkorange;
+  --color-green-primary: mediumseagreen;
+}
+ 
+html{
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 152rem;
+  margin: auto;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* justify-content: center; */
+}
+
+button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.searchbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+input[type="text"] {
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 32rem;
+  border-bottom: 0.2em solid #020d35;
+  background: rgba(#e91e63, 0.2);
+  border-radius: 0.2em 0.2em 0 0;
+  padding: 0.8em;
+  font-size: 1.6rem;
+  color: #000000;
+  -webkit-border-radius: 0.2em 0.2em 0 0;
+  -moz-border-radius: 0.2em 0.2em 0 0;
+  -ms-border-radius: 0.2em 0.2em 0 0;
+  -o-border-radius: 0.2em 0.2em 0 0;
+}
+
+.productList{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.productCard{
+  position: relative;
+  background-color: var(--color-grey-primary);
+  margin: 1rem;
+  flex: 1 0 25rem;
+  max-width: 30rem;
+  max-height: 50rem;
+  transition: 0.2s;
+}
+
+.productCard:hover{
+  transform: translateY(-0.5rem);
+  box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+
+.productImage{
+  margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.productCard__content {
+  margin: 2rem;
+}
+
+.productName{
+  font-size: 1.5rem;
+  margin: 0rem 1rem;
+}
+
+
+.displayStack__1{
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productPrice{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
